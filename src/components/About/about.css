@@ -1,0 +1,63 @@
+.about {
+  width: 100%;
+  justify-content: space-between;
+  padding: 70px 30px;
+}
+.about-text-side {
+  width: 100%;
+  display: flex;
+  padding: 40px 0px;
+  height: fit-content;
+}
+.about-content {
+  padding: 0px !important;
+  flex: 1;
+}
+.about-recent-tech {
+  width: 60%;
+}
+.about-recent-tech ul {
+  width: 100%;
+  padding: 0px 15px;
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+}
+.about-recent-tech ul li {
+  padding: 5px 0px;
+  color: var(--dark-color);
+  width: 50%;
+}
+.about-recent-tech ul li::before {
+  content: "□";
+  color: var(--bright-border);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.about-title-wrapper {
+  width: 62%;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+}
+.title-line {
+  flex: 1;
+  border-bottom: 1px solid var(--light-border);
+  margin-left: 20px;
+}
+.my-image-container {
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+}
+.my-image-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+.about-content p {
+  line-height: 25px;
+  padding-right: 50px;
+  color: var(--dark-color);
+}

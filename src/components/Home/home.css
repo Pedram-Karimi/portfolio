@@ -1,0 +1,49 @@
+.homeBody {
+  width: 100%;
+  padding: 70px 30px;
+  height: 100vh;
+}
+.homeBody a {
+  text-decoration: none;
+}
+.hi {
+  color: var(--bright-border);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Pacifico";
+}
+.name {
+  font-size: 25px;
+  font-family: "Inconsolata";
+  font-weight: bold;
+}
+.name span {
+  color: var(--bright-border);
+}
+.see-projects-btn {
+  padding: 20px;
+  width: fit-content;
+  border: 1px solid var(--bright-border);
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--bright-border);
+  margin-top: 70px;
+  border-radius: 2px;
+}
+.see-projects-btn:hover {
+  background-color: #44b09008;
+}
+.title {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Inconsolata";
+}
+.content {
+  color: var(--dark-color);
+  font-size: large;
+  max-width: 850px;
+  font-family: "Inconsolata";
+  margin-top: 20px;
+  line-height: 1.4;
+}

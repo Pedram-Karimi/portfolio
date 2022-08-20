@@ -1,0 +1,7 @@
+.app {
+  display: flex;
+}
+.content-part {
+  flex: 1;
+  margin-left: 22%;
+}
