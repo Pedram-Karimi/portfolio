@@ -3,3 +3,79 @@
   padding: 70px 30px;
   height: 100vh;
 }
+.contacts-container {
+  padding: 50px 0px;
+  display: flex;
+  gap: 20px;
+}
+.email-send-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+.email-send-form input {
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #44b09025;
+  border-radius: 2px;
+  width: 100% !important;
+  outline: none;
+  transition: 0.2s;
+  color: var(--white-text);
+}
+.email-send-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.2s;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  outline: none;
+  border: 1px solid #44b09025;
+  border-radius: 2px;
+}
+.email-send-form button {
+  padding: 14px 40px;
+  width: fit-content;
+  width: 100%;
+  border: 1px solid var(--light-border);
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #44b09008;
+  color: var(--bright-border);
+  border-radius: 2px;
+}
+.email-send-form button:hover {
+  border: 1px solid var(--bright-border);
+  color: var(--bright-border);
+}
+.email-send-form input:focus {
+  border: 1px solid var(--bright-border);
+}
+.email-send-form textarea:focus {
+  border: 1px solid var(--bright-border);
+}
+.email-send-form input::placeholder {
+  color: #545b59;
+}
+.email-send-form textarea::placeholder {
+  color: #545b59;
+}
+.email-invitation {
+  border: 1px solid var(--lighter-border);
+  max-height: 400px;
+  width: 45%;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 40px;
+  color: var(---dark-color);
+}
+.email-invitation p {
+  text-align: center;
+  line-height: 27px;
+}

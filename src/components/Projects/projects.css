@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
 }
+.projects a {
+  text-decoration: none;
+}
 .projects-conatainer {
   padding: 50px 0px;
   justify-content: center;
@@ -17,8 +20,8 @@
 .project-component {
   max-width: 300px;
   border: 1px solid #44b09025;
-  padding: 10px;
   height: 350px;
+  position: relative;
   transition: 0.2s;
   border-radius: 2px;
   cursor: pointer;
@@ -29,17 +32,36 @@
 .project-component:hover {
   background-color: #44b09008;
 }
+.project-component:hover .project-github-icon {
+  fill: var(--bright-border);
+}
 .project-component img {
   width: 100%;
   transition: 0.2s;
   height: 50%;
-  border-radius: 2px;
 }
+.project-img-cover {
+  width: 100%;
+  height: 50%;
+  transition: 0.2s;
+  position: absolute;
+  background-color: #44b09031;
+}
+
 .project-detail {
-  margin-top: 20px;
-  font-size: 16px;
+  font-size: 12px;
   direction: ltr;
+  line-height: 20px;
+  padding: 10px;
 }
 .project-detail p {
   color: var(--dark-color);
+}
+.project-github-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  fill: var(--dark-color);
+  cursor: pointer;
 }

@@ -66,7 +66,10 @@ function SideMenu() {
           <a>
             <FaLinkedin className="social-icon" /> <p>Linked in</p>
           </a>
-          <a id="email"> pedramkarimi1001@gmail.com</a>
+          <div className="resume-container">
+            <div className="resume-style-line"></div>
+            <a id="resume">Resume</a>
+          </div>
         </div>
       </div>
     </div>

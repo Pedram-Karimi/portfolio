@@ -20,10 +20,9 @@ function Home() {
       </p>
       <p className="title">I am a front-end web developer</p>
       <p className="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        I'm a software engineer specializing in front-end (graphical user
+        interface of a website), I build web apps that users can view and
+        interact with.
       </p>
       <a href="#projects">
         <div className="see-projects-btn">See some of my works</div>

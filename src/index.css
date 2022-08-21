@@ -19,7 +19,8 @@ body {
 }
 :root {
   --bright-border: #44b090;
-  --light-border: #33405b;
+  --light-border: #44b09025;
+  --lighter-border: #24342f5d;
   --dark-color: #8896b0;
   --white-text: #b8c2d8;
   --dark-border: #151e30;

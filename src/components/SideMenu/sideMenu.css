@@ -93,10 +93,56 @@
 .social-media a:hover {
   color: #44b090 !important;
 }
-#email {
-  padding: 20px;
-  border-top: 1px solid var(--dark-border);
+#resume {
+  padding: 15px 20px;
+  border: 1px solid var(--light-border);
   font-size: 15px;
+  transition: 0.2s;
   color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 15px !important;
+  z-index: 2;
+  background-color: #101726;
+  margin-bottom: 10px !important;
+  margin: auto;
+}
+.resume-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.resume-style-line {
   width: 100%;
+  z-index: 0;
+  border-top: 1px solid var(--light-border);
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .side-menu {
+    display: none;
+  }
+  .content-part {
+    margin: 0px;
+  }
+  .about-text-side {
+    flex-direction: column;
+  }
+  .projects-conatainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-send-form {
+    width: 100% !important;
+  }
+  .email-invitation {
+    width: 100% !important;
+  }
 }
