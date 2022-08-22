@@ -2,6 +2,7 @@
   width: 100%;
   justify-content: space-between;
   padding: 70px 30px;
+  opacity: 0;
 }
 .about-text-side {
   width: 100%;
@@ -60,4 +61,25 @@
   line-height: 25px;
   padding-right: 50px;
   color: var(--dark-color);
+}
+.about-animation {
+  width: 100%;
+  justify-content: space-between;
+  padding: 70px 30px;
+  transition: 0.2s;
+}
+@keyframes wipe-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .about-animation {
+    animation: wipe-enter 1s ease;
+  }
 }

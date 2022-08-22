@@ -1,12 +1,25 @@
 .contact {
   width: 100%;
+  transition: 0.2s;
   padding: 70px 30px;
+  overflow: hidden;
   height: 100vh;
+  opacity: 0;
 }
 .contacts-container {
   padding: 50px 0px;
   display: flex;
   gap: 20px;
+}
+.contact-title-wrapper {
+  width: 65%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.contact-title-wrapper h2 {
+  background-color: var(--background-color);
+  z-index: 2;
 }
 .email-send-form {
   display: flex;
@@ -48,6 +61,13 @@
   color: var(--bright-border);
   border-radius: 2px;
 }
+.email-send-form input:-webkit-autofill,
+.email-send-form input:-webkit-autofill:hover,
+.email-send-form input:-webkit-autofill:active,
+.email-send-form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--background-color) inset !important;
+  -webkit-text-fill-color: var(--white-text) !important;
+}
 .email-send-form button:hover {
   border: 1px solid var(--bright-border);
   color: var(--bright-border);
@@ -68,14 +88,50 @@
   border: 1px solid var(--lighter-border);
   max-height: 400px;
   width: 45%;
+  background-color: var(--lighter-background);
   flex-direction: column;
   display: flex;
   padding: 20px;
+  position: relative;
   align-items: center;
   gap: 40px;
   color: var(---dark-color);
 }
-.email-invitation p {
+.invite-text {
   text-align: center;
+  color: var(--darker-color);
   line-height: 27px;
+}
+.contact-email {
+  bottom: 20px;
+  margin: auto;
+  position: absolute;
+  color: var(--darker-color);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.contact-email:hover {
+  color: var(--bright-border);
+}
+.contact-animation {
+  width: 100%;
+  transition: 0.2s;
+  padding: 70px 30px;
+  overflow: hidden;
+  height: 100vh;
+}
+@keyframes wipe-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .contact-animation {
+    animation: wipe-enter 1s ease;
+  }
 }

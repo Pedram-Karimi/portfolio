@@ -1,9 +1,17 @@
 import "./about.css";
 import { usePagePosition } from "../../context/SectionScroll";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 function About() {
   const aboutRef = useRef<any>();
-  const { changePagePosition } = usePagePosition();
+  const { changePagePosition, pagesPosition } = usePagePosition();
+  const [pageAnimetion, setPageAnimetion] = useState<string>("about");
+
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY + 200 >= pagesPosition.about) {
+      setPageAnimetion("contact-animation");
+    }
+  });
+
   useEffect(() => {
     changePagePosition({ about: aboutRef.current.offsetTop });
     window.addEventListener("resize", () => {
@@ -11,7 +19,7 @@ function About() {
     });
   }, [aboutRef]);
   return (
-    <div className="about" id="about" ref={aboutRef}>
+    <div className={pageAnimetion} id="about" ref={aboutRef}>
       <div className="about-title-wrapper">
         <h2>About me</h2>
         <div className="title-line"></div>

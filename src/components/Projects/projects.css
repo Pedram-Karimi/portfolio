@@ -1,6 +1,7 @@
 .projects {
   width: 100%;
   height: fit-content;
+  opacity: 0;
   padding: 70px 30px;
 }
 .projects-title-wrapper {
@@ -64,4 +65,28 @@
   font-size: 20px;
   fill: var(--dark-color);
   cursor: pointer;
+}
+.projects-animation {
+  width: 100%;
+  height: fit-content;
+  padding: 70px 30px;
+  transition: 0.2s;
+}
+.projects-animation a {
+  text-decoration: none;
+}
+@keyframes wipe-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .projects-animation {
+    animation: wipe-enter 1s ease;
+  }
 }

@@ -4,7 +4,15 @@ import "./projects.css";
 import { usePagePosition } from "../../context/SectionScroll";
 function Projects() {
   const projectsRef = useRef<any>();
-  const { changePagePosition } = usePagePosition();
+  const { changePagePosition, pagesPosition } = usePagePosition();
+  const [pageAnimation, setPageAnimation] = useState<string>("projects");
+
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY >= pagesPosition.projects) {
+      setPageAnimation("projects-animation");
+    }
+  });
+
   useEffect(() => {
     changePagePosition({ projects: projectsRef.current.offsetTop });
     window.addEventListener("resize", () => {
@@ -12,7 +20,7 @@ function Projects() {
     });
   }, [projectsRef]);
   return (
-    <div className="projects" id="projects" ref={projectsRef}>
+    <div className={`${pageAnimation}`} id="projects" ref={projectsRef}>
       <div className="projects-title-wrapper">
         <h2>Some projects i have build</h2>
         <div className="title-line"></div>
