@@ -66,7 +66,6 @@
   width: 100%;
   justify-content: space-between;
   padding: 70px 30px;
-  transition: 0.2s;
 }
 @keyframes wipe-enter {
   0% {
@@ -80,6 +79,6 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .about-animation {
-    animation: wipe-enter 1s ease;
+    animation: wipe-enter 0.3s ease;
   }
 }

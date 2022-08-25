@@ -79,10 +79,10 @@
   border: 1px solid var(--bright-border);
 }
 .email-send-form input::placeholder {
-  color: #545b59;
+  color: var(--darker-color);
 }
 .email-send-form textarea::placeholder {
-  color: #545b59;
+  color: var(--darker-color);
 }
 .email-invitation {
   border: 1px solid var(--lighter-border);
@@ -115,7 +115,6 @@
 }
 .contact-animation {
   width: 100%;
-  transition: 0.2s;
   padding: 70px 30px;
   overflow: hidden;
   height: 100vh;
@@ -132,6 +131,6 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .contact-animation {
-    animation: wipe-enter 1s ease;
+    animation: wipe-enter 0.3s ease;
   }
 }

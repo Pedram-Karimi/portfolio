@@ -23,6 +23,7 @@
   border: 1px solid #44b09025;
   height: 350px;
   position: relative;
+  background-color: rgb(21, 29, 45);
   transition: 0.2s;
   border-radius: 2px;
   cursor: pointer;
@@ -30,11 +31,12 @@
 .project-component:hover p {
   color: var(--bright-border);
 }
-.project-component:hover {
-  background-color: #44b09008;
-}
+
 .project-component:hover .project-github-icon {
   fill: var(--bright-border);
+}
+.project-component:hover .project-img-cover {
+  background-color: rgb(21, 29, 45, 0.5);
 }
 .project-component img {
   width: 100%;
@@ -46,7 +48,7 @@
   height: 50%;
   transition: 0.2s;
   position: absolute;
-  background-color: #44b09031;
+  background-color: rgb(21, 29, 45, 0.7);
 }
 
 .project-detail {
@@ -70,7 +72,6 @@
   width: 100%;
   height: fit-content;
   padding: 70px 30px;
-  transition: 0.2s;
 }
 .projects-animation a {
   text-decoration: none;
@@ -87,6 +88,6 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .projects-animation {
-    animation: wipe-enter 1s ease;
+    animation: wipe-enter 0.3s ease;
   }
 }

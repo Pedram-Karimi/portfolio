@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
           <button>Send</button>
         </form>
         <div className="email-invitation">
-          <h2>Say Hi</h2>
+          <h2>Hire me.</h2>
           <p className="invite-text">
             I will be happy to receive your emails, I will do my best to answer
             your email

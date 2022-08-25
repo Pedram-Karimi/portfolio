@@ -8,7 +8,7 @@ function About() {
 
   window.addEventListener("scroll", (e) => {
     if (window.scrollY + 200 >= pagesPosition.about) {
-      setPageAnimetion("contact-animation");
+      setPageAnimetion("about-animation");
     }
   });
 
