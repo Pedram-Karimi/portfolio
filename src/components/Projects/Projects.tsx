@@ -8,7 +8,7 @@ function Projects() {
   const [pageAnimation, setPageAnimation] = useState<string>("projects");
 
   window.addEventListener("scroll", (e) => {
-    if (window.scrollY >= pagesPosition.projects) {
+    if (window.scrollY + 1 >= pagesPosition.projects) {
       setPageAnimation("projects-animation");
     }
   });
@@ -22,7 +22,7 @@ function Projects() {
   return (
     <div className={`${pageAnimation}`} id="projects" ref={projectsRef}>
       <div className="projects-title-wrapper">
-        <h2>Some projects i have build</h2>
+        <h2>Sample projects</h2>
         <div className="title-line"></div>
       </div>
       <div className="projects-conatainer">

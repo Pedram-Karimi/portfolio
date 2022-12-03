@@ -4,8 +4,10 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { usePagePosition } from "../../context/SectionScroll";
 import { useEffect, useState } from "react";
+import { usePhoneSideMenu } from "../../context/PhoneSideMenu";
 function SideMenu() {
   const { pagesPosition } = usePagePosition();
+  const { sideMenuStatus } = usePhoneSideMenu();
   const [activeLi, setActiveLi] = useState("");
   useEffect(() => {
     setActiveLi("home");
@@ -17,7 +19,7 @@ function SideMenu() {
     if (window.scrollY >= pagesPosition.about) {
       setActiveLi("about");
     }
-    if (window.scrollY >= pagesPosition.projects) {
+    if (window.scrollY + 1 >= pagesPosition.projects) {
       setActiveLi("projects");
     }
     if (window.scrollY >= pagesPosition.contact) {
@@ -25,7 +27,7 @@ function SideMenu() {
     }
   });
   return (
-    <div className="side-menu">
+    <div className={`side-menu ${!sideMenuStatus && "hide-sideMenu"}`}>
       <div className="header">
         <img src="./images/logo-v3.png" alt="logo" />
       </div>

@@ -24,15 +24,12 @@ function Home() {
           my name is <span>Pedram Karimi</span>
         </p>
         <p className="title">I am a front-end web developer</p>
-        <p className="content">
-          I'm a software engineer specializing in front-end (graphical user
-          interface of a website), I build web apps that users can view and
-          interact with.
-        </p>
-
-        <a href="#projects">
-          <div className="see-projects-btn">See some of my works</div>
-        </a>
+        <p className="content">I'm a Full-stack software engineer</p>
+        <div className="see-projects-btn">
+          <a href="#projects">
+            <p>See some of my works</p>
+          </a>
+        </div>
       </div>
       <div className="area">
         <ul className="circles">

@@ -24,6 +24,7 @@ body {
   --darker-color: #384965;
   --lighter-background: rgba(17, 29, 56, 0.037);
   --background-color: rgba(16, 23, 38);
+  --background-color-blur: rgba(16, 23, 38, 0.9);
   --dark-color: #8896b0;
   --white-text: #b8c2d8;
   --dark-border: #151e30;

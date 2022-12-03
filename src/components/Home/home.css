@@ -4,9 +4,6 @@
   height: 100vh;
   z-index: 10 !important;
 }
-.homeBody a {
-  text-decoration: none;
-}
 .hi {
   color: var(--bright-border);
   font-size: 18px;
@@ -22,6 +19,15 @@
   color: var(--bright-border);
 }
 .see-projects-btn {
+  width: fit-content;
+}
+.see-projects-btn:hover {
+  background-color: #44b09008;
+}
+.see-projects-btn a {
+  text-decoration: none;
+}
+.see-projects-btn p {
   padding: 20px;
   width: fit-content;
   border: 1px solid var(--bright-border);
@@ -30,9 +36,6 @@
   color: var(--bright-border);
   margin-top: 70px;
   border-radius: 2px;
-}
-.see-projects-btn:hover {
-  background-color: #44b09008;
 }
 .title {
   font-size: 30px;

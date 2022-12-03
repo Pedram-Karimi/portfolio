@@ -7,6 +7,7 @@
   position: fixed;
   top: 0px;
   font-size: small !important;
+  transition: 0.2s;
 }
 .header {
   font-size: x-large;
@@ -119,30 +120,4 @@
   z-index: 0;
   border-top: 1px solid var(--light-border);
   position: absolute;
-}
-
-@media screen and (max-width: 1000px) {
-  .side-menu {
-    display: none;
-  }
-  .content-part {
-    margin: 0px;
-  }
-  .about-text-side {
-    flex-direction: column;
-  }
-  .projects-conatainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacts-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .email-send-form {
-    width: 100% !important;
-  }
-  .email-invitation {
-    width: 100% !important;
-  }
 }
