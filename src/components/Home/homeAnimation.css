@@ -22,8 +22,6 @@ body {
 }
 
 .area {
-  background: transparent;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   top: 0px;
   left: 22%;
   z-index: -10 !important;
@@ -47,7 +45,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(86, 123, 199, 0.1);
+  background: rgba(40, 64, 112, 0.1);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
