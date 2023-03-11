@@ -9,7 +9,6 @@ const Contact: React.FC = () => {
   const { changePagePosition, pagesPosition } = usePagePosition();
   const [senderName, setSenderName] = useState<string>();
   const [senderText, setSenderText] = useState<string>();
-  const [pageAnimetion, setPageAnimetion] = useState<string>("contact");
   const form = useRef<any>();
 
   const sendEmail = (e: any) => {
@@ -32,11 +31,6 @@ const Contact: React.FC = () => {
         }
       );
   };
-  window.addEventListener("scroll", (e) => {
-    if (window.scrollY >= pagesPosition.contact) {
-      setPageAnimetion("contact-animation");
-    }
-  });
   useEffect(() => {
     if (contactRef) {
       changePagePosition({ contact: contactRef.current.offsetTop });
@@ -46,7 +40,7 @@ const Contact: React.FC = () => {
     }
   }, [contactRef]);
   return (
-    <div className={`${pageAnimetion}`} id="contact" ref={contactRef}>
+    <div className="contact" id="contact" ref={contactRef}>
       <div className="contact-title-wrapper">
         <h2>Contact me</h2>
         <div className="title-line"></div>
@@ -54,8 +48,8 @@ const Contact: React.FC = () => {
       <div className="contacts-container">
         <form className="email-send-form" ref={form} onSubmit={sendEmail}>
           <input
-            placeholder="Your name"
-            name="from_name"
+            placeholder="Your email"
+            name="from_email"
             value={senderName}
             onChange={(e) => {
               setSenderName(e.target.value);
@@ -71,14 +65,6 @@ const Contact: React.FC = () => {
           />
           <button>Send</button>
         </form>
-        <div className="email-invitation">
-          <h2>Hire me.</h2>
-          <p className="invite-text">
-            I will be happy to receive your emails, I will do my best to answer
-            your email
-          </p>
-          <p className="contact-email">pedramkarimi1001@gmail.com</p>
-        </div>
       </div>
     </div>
   );

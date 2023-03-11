@@ -1,4 +1,5 @@
 import { usePhoneSideMenu } from "../../context/PhoneSideMenu";
+import logo from "../../assets/images/logo-v3.png";
 
 //
 const HeaderMobile: React.FC = () => {
@@ -17,7 +18,6 @@ const HeaderMobile: React.FC = () => {
       )}
       {sideMenuStatus && (
         <svg
-          enable-background="new 0 0 24 24"
           viewBox="0 0 24 24"
           onClick={() => {
             changeSideMenuStatus();
@@ -30,7 +30,7 @@ const HeaderMobile: React.FC = () => {
           />
         </svg>
       )}
-      <img src="./images/logo-v3.png" alt="logo" />
+      <img src={logo} alt="logo" />
     </div>
   );
 };

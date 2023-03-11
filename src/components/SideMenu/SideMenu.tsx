@@ -1,3 +1,4 @@
+import logo from "../../assets/images/logo-v3.png";
 import "./sideMenu.css";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -7,11 +8,14 @@ import { useEffect, useState } from "react";
 import { usePhoneSideMenu } from "../../context/PhoneSideMenu";
 function SideMenu() {
   const { pagesPosition } = usePagePosition();
-  const { sideMenuStatus } = usePhoneSideMenu();
+  const { sideMenuStatus, changeSideMenuStatus } = usePhoneSideMenu();
   const [activeLi, setActiveLi] = useState("");
   useEffect(() => {
     setActiveLi("home");
   }, []);
+  const hideMenu = () => {
+    changeSideMenuStatus(false);
+  };
   window.addEventListener("scroll", () => {
     if (window.scrollY >= pagesPosition.home) {
       setActiveLi("home");
@@ -22,14 +26,14 @@ function SideMenu() {
     if (window.scrollY + 1 >= pagesPosition.projects) {
       setActiveLi("projects");
     }
-    if (window.scrollY >= pagesPosition.contact) {
+    if (window.scrollY + 1 >= pagesPosition.contact) {
       setActiveLi("contact");
     }
   });
   return (
     <div className={`side-menu ${!sideMenuStatus && "hide-sideMenu"}`}>
       <div className="header">
-        <img src="./images/logo-v3.png" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className="side-menu-body">
         <ul>
@@ -37,40 +41,55 @@ function SideMenu() {
             <li
               className={activeLi == "home" ? "li-active" : "li-menu"}
               style={{ borderTop: "1px solid var(--dark-border)" }}
+              onClick={hideMenu}
             >
               <div></div>
               Home
             </li>
           </a>
           <a href="#about">
-            <li className={activeLi == "about" ? "li-active" : "li-menu"}>
+            <li
+              className={activeLi == "about" ? "li-active" : "li-menu"}
+              onClick={hideMenu}
+            >
               <div></div>About
             </li>
           </a>
           <a href="#projects">
-            <li className={activeLi == "projects" ? "li-active" : "li-menu"}>
+            <li
+              className={activeLi == "projects" ? "li-active" : "li-menu"}
+              onClick={hideMenu}
+            >
               <div></div>Projects
             </li>
           </a>
           <a href="#contact">
-            <li className={activeLi == "contact" ? "li-active" : "li-menu"}>
+            <li
+              className={activeLi == "contact" ? "li-active" : "li-menu"}
+              onClick={hideMenu}
+            >
               <div></div>Contact
             </li>
           </a>
         </ul>
         <div className="social-media">
           <a>
-            <FaGithub className="social-icon" /> <p>Git-hub</p>
+            <FaGithub className="social-icon" onClick={hideMenu} />{" "}
+            <p>Git-hub</p>
           </a>
           <a>
-            <FaTwitter className="social-icon" /> <p>Twitter</p>
+            <FaTwitter className="social-icon" onClick={hideMenu} />{" "}
+            <p>Twitter</p>
           </a>
           <a>
-            <FaLinkedin className="social-icon" /> <p>Linked in</p>
+            <FaLinkedin className="social-icon" onClick={hideMenu} />{" "}
+            <p>Linked in</p>
           </a>
           <div className="resume-container">
             <div className="resume-style-line"></div>
-            <a id="resume">Resume</a>
+            <a id="resume" onClick={hideMenu}>
+              Resume
+            </a>
           </div>
         </div>
       </div>

@@ -16,15 +16,18 @@ function Home() {
 
   return (
     <>
-      <div className="homeBody" id="home" ref={homeRef}>
+      <div className="home" id="home" ref={homeRef}>
         <p className="hi" style={{ fontFamily: "Pacifico" }}>
           Hi,
         </p>
         <p className="name">
-          my name is <span>Pedram Karimi</span>
+          My name is <span>Pedram Karimi</span>
         </p>
-        <p className="title">I am a front-end web developer</p>
-        <p className="content">I'm a Full-stack software engineer</p>
+        <p className="title">I am a Full-stack web developer</p>
+        <p className="content">
+          Passionate fullstack developer dedicated to building high-quality,
+          accessible web applications.
+        </p>
         <div className="see-projects-btn">
           <a href="#projects">
             <p>See some of my works</p>

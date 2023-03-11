@@ -9,21 +9,20 @@
   color: var(--white-text);
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 img {
   object-fit: cover;
 }
 body {
-  background-color: rgba(16, 23, 38);
+  background-color: rgb(12, 18, 30);
 }
 :root {
   --bright-border: #44b090;
   --light-border: #44b09025;
-  --lighter-border: #24342f5d;
   --darker-color: #384965;
-  --lighter-background: rgba(17, 29, 56, 0.037);
-  --background-color: rgba(16, 23, 38);
+  --light-bg: rgba(12, 18, 30, 0.688);
+  --background-color: rgb(12, 18, 30);
   --background-color-blur: rgba(16, 23, 38, 0.9);
   --dark-color: #8896b0;
   --white-text: #b8c2d8;

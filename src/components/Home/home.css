@@ -1,4 +1,4 @@
-.homeBody {
+.home {
   width: 100%;
   padding: 70px 30px;
   height: 100vh;
@@ -45,7 +45,7 @@
 }
 .content {
   color: var(--dark-color);
-  font-size: large;
+  font-size: larger;
   max-width: 850px;
   font-family: "Inconsolata";
   margin-top: 20px;
