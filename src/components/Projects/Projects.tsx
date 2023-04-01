@@ -24,16 +24,18 @@ function Projects() {
         <div className="title-line"></div>
       </div>
       <div className="projects-conatainer">
-        <a href="https://github.com/Pedram-Karimi/BlogYar" target="blank">
+        <a href="https://pedram-karimi.github.io/BlogYar" target="blank">
           <ProjectComponent
             projectImg={blogImg}
-            projectText="This is one of the projects that I am most proud of, it is a full stack website that allows anyone to write thier ideas and also is a competitive platform that writers can compete for the top writers of mounth, web app is completly secure with firebase rules and uses firebase authentication"
+            link="https://github.com/Pedram-Karimi/BlogYar"
+            projectText="BlogYar is a powerful, user-friendly blog platform built with React and Firebase. Users can create accounts, publish posts, and interact with others via comments and likes. It's ideal for writers of all levels, providing an intuitive interface and a robust backend."
           />
         </a>
-        <a href="https://github.com/Pedram-Karimi/ChatYar" target="blank">
+        <a href="https://pedram-karimi.github.io/chatyar" target="blank">
           <ProjectComponent
             projectImg={chatImg}
-            projectText="This is a chating app that allows users to write message to their friends and family you can do all basic things you can do in other chat apps, but I still think it needs some extra features"
+            link="https://github.com/Pedram-Karimi/chatyar"
+            projectText="Chatyar is built with React and Firebase, offering real-time messaging and file-sharing. The app has a user-friendly interface and leverages Firebase's backend infrastructure for seamless functionality."
           />
         </a>
       </div>

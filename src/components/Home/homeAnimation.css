@@ -45,7 +45,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(40, 64, 112, 0.1);
+  background: rgba(31, 49, 85, 0.3);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

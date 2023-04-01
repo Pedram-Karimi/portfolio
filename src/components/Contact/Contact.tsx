@@ -66,6 +66,9 @@ const Contact: React.FC = () => {
           <button>Send</button>
         </form>
       </div>
+      <p className="email-ref">
+        Email: <span>pedramkarimi1001@gmail.com</span>
+      </p>
     </div>
   );
 };

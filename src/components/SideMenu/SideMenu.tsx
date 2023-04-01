@@ -73,15 +73,15 @@ function SideMenu() {
           </a>
         </ul>
         <div className="social-media">
-          <a>
+          <a href="https://github.com/Pedram-Karimi">
             <FaGithub className="social-icon" onClick={hideMenu} />{" "}
             <p>Git-hub</p>
           </a>
-          <a>
+          <a href="https://twitter.com/pedramk15355881">
             <FaTwitter className="social-icon" onClick={hideMenu} />{" "}
             <p>Twitter</p>
           </a>
-          <a>
+          <a href="https://www.linkedin.com/in/pedram-karimi-901a32258/">
             <FaLinkedin className="social-icon" onClick={hideMenu} />{" "}
             <p>Linked in</p>
           </a>
