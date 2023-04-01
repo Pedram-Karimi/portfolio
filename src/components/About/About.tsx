@@ -1,4 +1,5 @@
-import avatar from "../../assets/images/avatar.jpg";
+import avatar from "../../assets/images/MyImage.jpg";
+
 import "./about.css";
 import { usePagePosition } from "../../context/SectionScroll";
 import { useRef, useEffect, useState } from "react";

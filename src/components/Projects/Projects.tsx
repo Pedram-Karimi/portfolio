@@ -24,20 +24,19 @@ function Projects() {
         <div className="title-line"></div>
       </div>
       <div className="projects-conatainer">
-        <a href="https://pedram-karimi.github.io/BlogYar" target="blank">
-          <ProjectComponent
-            projectImg={blogImg}
-            link="https://github.com/Pedram-Karimi/BlogYar"
-            projectText="BlogYar is a powerful, user-friendly blog platform built with React and Firebase. Users can create accounts, publish posts, and interact with others via comments and likes. It's ideal for writers of all levels, providing an intuitive interface and a robust backend."
-          />
-        </a>
-        <a href="https://pedram-karimi.github.io/chatyar" target="blank">
-          <ProjectComponent
-            projectImg={chatImg}
-            link="https://github.com/Pedram-Karimi/chatyar"
-            projectText="Chatyar is built with React and Firebase, offering real-time messaging and file-sharing. The app has a user-friendly interface and leverages Firebase's backend infrastructure for seamless functionality."
-          />
-        </a>
+        <ProjectComponent
+          projectImg={blogImg}
+          link="https://github.com/Pedram-Karimi/BlogYar"
+          webLink="https://pedram-karimi.github.io/blogyar"
+          projectText="BlogYar is a powerful, user-friendly blog platform built with React and Firebase. Users can create accounts, publish posts, and interact with others via comments and likes. It's ideal for writers of all levels, providing an intuitive interface and a robust backend."
+        />
+
+        <ProjectComponent
+          projectImg={chatImg}
+          link="https://github.com/Pedram-Karimi/chatyar"
+          webLink="https://pedram-karimi.github.io/chatyar"
+          projectText="Chatyar is built with React and Firebase, offering real-time messaging and file-sharing. The app has a user-friendly interface and leverages Firebase's backend infrastructure for seamless functionality."
+        />
       </div>
       <div className="area-projects">
         <ul className="circles-projects">
