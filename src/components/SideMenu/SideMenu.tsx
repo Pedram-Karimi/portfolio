@@ -87,9 +87,9 @@ function SideMenu() {
           </a>
           <div className="resume-container">
             <div className="resume-style-line"></div>
-            <a id="resume" onClick={hideMenu}>
+            {/* <a id="resume" onClick={hideMenu}>
               Resume
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

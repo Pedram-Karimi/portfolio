@@ -25,9 +25,9 @@ function About() {
             <p>
               Hello, I'm Pedram, a flexible and adaptable fullstack developer
               with a passion for building exciting web applications. My love for
-              web development began in 2018 when I built my first online store
-              in my country. Since then, I've continued to learn and expand my
-              skills in various technologies.
+              web development began in 2018 when I built my first online store.
+              Since then, I've continued to learn and expand my skills in
+              various technologies.
               <br /> <br /> As a fullstack developer, I specialize in both
               front-end and back-end development. I have expertise in popular
               frameworks such as React and Node.js, as well as various databases
@@ -36,8 +36,8 @@ function About() {
               quickly pick up and work with any tech stack. <br /> <br />
               I'm dedicated to creating high-quality, scalable web applications
               that provide an excellent user experience. When I'm not coding, I
-              enjoy contributing to open-source projects and staying up-to-date
-              with the latest industry trends.
+              enjoy doing side projects and staying up-to-date with the latest
+              industry trends.
               <br />
               <br /> Here are a few technologies I've been working with
               recently:
