@@ -1,0 +1,120 @@
+.contact {
+  width: 100%;
+  padding: 75px 30px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.contacts-container {
+  padding: 50px 0px;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.contact-title-wrapper {
+  width: 65%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.contact-title-wrapper h2 {
+  z-index: 2;
+}
+.email-send-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.email-send-form input {
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #44b09025;
+  border-radius: 2px;
+  width: 100% !important;
+  outline: none;
+  transition: 0.2s;
+  color: var(--white-text);
+}
+.email-send-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.2s;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  outline: none;
+  border: 1px solid #44b09025;
+  border-radius: 2px;
+}
+.email-send-form button {
+  padding: 14px 40px;
+  width: fit-content;
+  width: 100%;
+  border: 1px solid var(--light-border);
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #44b09008;
+  color: var(--bright-border);
+  border-radius: 2px;
+}
+.email-send-form input:-webkit-autofill,
+.email-send-form input:-webkit-autofill:hover,
+.email-send-form input:-webkit-autofill:active,
+.email-send-form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--background-color) inset !important;
+  -webkit-text-fill-color: var(--white-text) !important;
+}
+.email-send-form button:hover {
+  border: 1px solid var(--bright-border);
+  color: var(--bright-border);
+}
+.email-send-form input:focus {
+  border: 1px solid var(--bright-border);
+}
+.email-send-form textarea:focus {
+  border: 1px solid var(--bright-border);
+}
+.email-send-form input::placeholder {
+  color: var(--darker-color);
+}
+.email-send-form textarea::placeholder {
+  color: var(--darker-color);
+}
+.email-invitation {
+  border: 1px solid var(--lighter-border);
+  height: 300px;
+  width: 45%;
+  background-color: var(--lighter-background);
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  gap: 40px;
+  color: var(---dark-color);
+}
+.invite-text {
+  text-align: center;
+  color: var(--darker-color);
+  line-height: 27px;
+}
+.contact-email {
+  bottom: 20px;
+  margin: auto;
+  position: absolute;
+  color: var(--darker-color);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.email-ref {
+  color: var(--bright-border);
+}
+.contact-email:hover {
+  color: var(--bright-border);
+}
+/* bg-animation */

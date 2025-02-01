@@ -1,0 +1,6 @@
+1. Fixing the font sizes.
+2. Fixing the contact section.
+3. Fixing project cards.
+4. Fixing the sideMenu scrolling.
+5. Fixing the text content.
+6. Publishing the website.

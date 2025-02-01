@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--white-text);
+}
+html {
+  scroll-behavior: smooth !important;
+}
+img {
+  object-fit: cover;
+}
+body {
+  background-color: rgb(12, 18, 30);
+}
+:root {
+  --bright-border: #44b090;
+  --light-border: #44b09025;
+  --darker-color: #384965;
+  --light-bg: rgba(12, 18, 30, 0.688);
+  --background-color: rgb(12, 18, 30);
+  --background-color-blur: rgba(16, 23, 38, 0.9);
+  --dark-color: #8896b0;
+  --white-text: #b8c2d8;
+  --dark-border: #151e30;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin: 5px 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #273656;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #202d4d;
+}
