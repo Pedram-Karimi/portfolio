@@ -3,7 +3,7 @@
   height: fit-content;
   padding: 75px 30px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .projects-title-wrapper {
   width: 65%;
